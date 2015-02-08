@@ -1,2 +1,7 @@
 .git
+.gitignore
+*.swp
+*.project
+*.template
 Readme.md
+upstart/
