@@ -2,8 +2,8 @@
 # Build: docker build -t apt-cacher .
 # Run: docker run -d -p 3142:3142 --name apt-cacher-instance apt-cacher
 #
-FROM        ubuntu-base:latest
-MAINTAINER  itl@netterchef.de
+FROM        ops/ubuntu:14.04
+MAINTAINER  bjoern.lippert@zetcom.local
 
 VOLUME      /var/cache/apt-cacher-ng /var/log/apt-cacher-ng
 RUN     apt-get update && apt-get install -y apt-cacher-ng
