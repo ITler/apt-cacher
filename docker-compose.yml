@@ -1,6 +1,6 @@
 aptcacher:
   restart: always
-  image: ops/apt-cacher
+  image: dockerregistry.zetcom.local/ops/apt-cacher
   ports:
     - 3142:3142
   volumes:
